@@ -35,6 +35,7 @@ int czasG1=180;
             public void run() {
                 if (kto==1){
                     czasG1--;
+
                    gracz1.setText("czas " + Integer.toString(czasG1));
                     handler.postDelayed(this, 1000);
 
@@ -42,7 +43,9 @@ int czasG1=180;
 
                 }
                 else{
+
                     czasG2--;
+
                     gracz2.setText("czas " + Integer.toString(czasG2));
                     handler.postDelayed(this, 1000);
 
